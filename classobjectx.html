@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <form action=""></form> -->
+    
+
+    <script>
+
+        class Form{
+            constructor(username, userpassword){
+                this.username = username
+                this.userpassword = userpassword
+            }
+            sayhello(){
+                alert("hello " + this.name)
+            }
+            sayhii(){
+                alert("hii " + this.name)
+            }
+            fil(givname){
+                this.name = givname
+            }
+            static myfunction(){
+                alert("this is myfunction")
+            }
+
+        }
+
+        // let mahesh = new Form("mahesh" , 123)
+        // mahesh.fil("mahesh")
+        // mahesh.sayhello()
+        // mahesh.myfunction()
+        // Form.myfunction()
+        // console.log(mahesh);
+
+
+        let ramesh = new Form("ramesh",456)
+        console.log(ramesh);
+        ramesh.fil("ramesh")
+        ramesh.sayhii()
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // fectrifunction
+
+        function demo(){
+            return console.log("123");
+        }
+        demo()
+
+        // construtor function
+
+        let user = {
+            name : "ravi",
+            age : 25,
+            loction : "surat"
+        }
+
+        console.log(user)
+
+       function Demodata(name, age, loction){
+        this.name = name
+        this.age = age
+        this.loction = loction
+       }
+
+       console.log(Demodata);
+
+       let userdata = new Demodata("divesh", 26, "america")
+       let userdata1 = new Demodata("sunil", 20, "japan")
+       let userdata2 = new Demodata("rohit", 25, "rajkot")
+
+       console.log(userdata);
+       console.log(userdata1);
+       console.log(userdata2);
+
+    </script>
+</body>
+</html>

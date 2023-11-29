@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>EK function KHATAM HO RAHA HAI USKE TURANT BAD DUSRA function CHAL JANA CHAHI USE BOLA JATA HAI CALLBACK
+        function.</h1> -->
+
+
+    <script>
+
+        function sayhello() {
+            console.log("sayhello");
+        }
+        function sayhii() {
+            console.log("sayhii");
+        }
+
+        function add(x, y, CALLBACK) {
+            console.log(x + y);
+            // sayhello()
+            CALLBACK()
+        }
+
+        let a = 10;
+        let b = 5;
+
+        add(a, b, sayhello)
+
+        let c = 20
+        let d = 25
+
+        add(c,d, sayhii)
+
+    </script>
+</body>
+
+</html>
